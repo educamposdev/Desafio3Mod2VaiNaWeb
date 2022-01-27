@@ -19,14 +19,18 @@ while (count2 >= 1) {
     count2 -= 1
 }
 
-let impares = 1
-if (impares % 2 == 1 | impares == 1) {
-    console.log(impares);
-    impares += 1;
-}
+for (let impares = 1; impares <= 100; impares++ ) {
+    if (impares%2 == 1 | impares == 1) {
+        console.log(impares)
+    } else {
+        continue 
+    }
+} 
 
-let pares = 0
-if (pares % 2 == 0) {
-    console.log(pares);
-    pares += 1;
+for (let pares = 0; pares <= 100; pares++) {
+    if (pares%2 == 0) {
+        console.log(pares)
+    } else {
+        continue
+    }
 }
